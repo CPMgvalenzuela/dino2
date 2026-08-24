@@ -1,0 +1,24 @@
+body{
+            font-family: sans-serif;
+        }
+
+        .contenedorTítulo{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(236, 9, 9);
+            color: rgb(253, 254, 255);
+        }
+nav{ background-color: rgb(243, 19, 19);
+
+  height: 200px;
+}
+
+li {
+        font-weight: bold;
+        font-style: italic;
+        font-decoration: underline;
+      }
+
+.contenedor{
+  padding-left: 500px;
+}
