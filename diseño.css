@@ -1,24 +1,47 @@
 body{
-            font-family: sans-serif;
-        }
-
-        .contenedorTítulo{
-            display: flex;
-            justify-content: center;
-            background-color: rgb(236, 9, 9);
-            color: rgb(253, 254, 255);
-        }
-nav{ background-color: rgb(243, 19, 19);
-
-  height: 200px;
+    font-family: sans-serif;
 }
-
+.contenedorTítulo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 9, 9);
+    color: rgb(253, 254, 255);
+}
+nav{
+    background-color: rgb(243, 19, 19);
+    height: 200px;
+}
 li {
-        font-weight: bold;
-        font-style: italic;
-        font-decoration: underline;
-      }
-
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
 .contenedor{
   padding-left: 500px;
+}
+
+/* Responsive: iPad Mini 2, tablets y móviles */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: hidden; }
+body { min-width: 0; padding: 0 3vw 30px; }
+.contenedorTítulo { width: 100%; min-height: 90px; padding: 18px 20px; align-items: center; text-align: center; }
+.contenedorTítulo h1, .contenedorTítulo h2 { max-width: 100%; overflow-wrap: anywhere; }
+nav { height: auto; min-height: 100px; padding: 18px 20px; }
+.contenedor { padding-left: 0; width: 100%; max-width: 1100px; margin: 0 auto; }
+img { max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; }
+table { width: 100%; max-width: 100%; }
+th, td { max-width: 100%; overflow-wrap: anywhere; }
+
+@media (max-width: 1024px) {
+    .contenedorTítulo { min-height: 80px; }
+    nav { min-height: 90px; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
+    h2 { font-size: clamp(1.4rem, 4vw, 2.2rem); }
+}
+
+@media (max-width: 600px) {
+    body { padding: 0 12px 24px; }
+    .contenedorTítulo { padding: 14px 10px; }
+    nav { padding: 14px 10px; }
+    ul, ol { padding-left: 24px; }
 }
